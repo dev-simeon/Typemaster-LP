@@ -30,7 +30,7 @@ h1{
 }
 
 p{
-    color: #b0c1db;
+    color: #c9dbf5;
     font-size: 15px;
     padding-top: 1em;
 }
@@ -164,7 +164,7 @@ footer{
 }
 
 @media screen and (max-width: 768px){
-    .nav,.container{
+    nav,.container{
         width: 80%;
     }
     .container{
@@ -183,6 +183,15 @@ footer{
     #hero-section section:first-child,#hero-section section:last-child{
         width: 100%;
     }
+
+    #hero-section section:first-child{
+        order: 2;
+    }
+
+    #hero-section section:last-child{
+        order: 1;
+    }
+
     
     #hero-section #main-button{
         margin-right: 18px;
