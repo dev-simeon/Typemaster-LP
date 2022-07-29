@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(0, 0% 90%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 3em 0; 
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+h3{
+    line-height: 1.3em;
+    color: #132340;
+    font-weight: 900;
+}
+
+h1{
+    color: #132340;
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 900;  
+}
+
+p{
+    color: #b0c1db;
+    font-size: 15px;
+    padding-top: 1em;
+}
+
+nav{
+    width: 70%;
+    margin: 0 auto;
+    padding:  3em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ nav div{
+    width: 35px;
+    height: 40px;
+    background-color: hsl(22deg 87% 51%);
+    color: #fff;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.button{
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #e7eff2;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#main-button{
+    background-color: hsl(22deg 87% 51%);
+    color: #fff;
+    margin-right: 3em;
+}
+
+#hero-section section:first-child{
+    align-self: center;
+    width: 40%;
+}
+
+#hero-section .cta-section{
+    margin-top: 18px;
+}
+
+#hero-section section:last-child{
+    background-color: #dce2e5;
+    border-radius: 15px;
+    width: 50%;
+}
+
+#hero-section .hero-img{
+    width: 100%;
+}
+
+.wireless-img-wrapper{
+    display: flex;
+    column-gap: 1em;
+    width: 66%;
+}
+
+.wireless-image-1{
+    border-radius: 15px;
+    background-image: url(../images/keyboard-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20%;
+    flex-grow: 1;
+    background-color: hsl(22deg 87% 51%);
+}
+
+.wireless-image-2{
+    background-image: url(../images/keyboard-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    flex-grow: 1;
+    height: 25em;
+    border-radius: 15px;
+}
+
+.wireless-section-content{
+    width: 30%;
+    align-self: center;
+}
+
+.feature-content-wrapper-1, .feature-content-wrapper-2{
+    display: flex;
+    margin-top: 4em;
+    column-gap: 1em;
+}
+
+#feature-section span{
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background-color: hsl(22deg 87% 51%);
+    border-radius: 6px;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 3em;
+    padding: 4px 5px 1.7em;
+}
+
+footer{
+    margin-top: 5em;
+    margin-bottom: 2em;
+    color: #abb0bb;
+    text-align: center;
+}
+
+
+
+/****************************************    MOBILE DESIGN    ************************************/
+
+@media screen and (max-width: 991px){
+    nav, .container{
+        width: 90%;
+    }
+
+    .feature-content-wrapper-1, .feature-content-wrapper-2{
+        flex-direction: column;
+    }
+
+    .feature-2,.feature-4{
+        margin-top: 3em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav,.container{
+        width: 80%;
+    }
+    .container{
+        padding: 0;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        flex-direction: column;
+        gap: 4em;
+        text-align: center;
+    }
+
+    #feature-section{
+        flex-direction: row;
+    }
+
+    #hero-section section:first-child,#hero-section section:last-child{
+        width: 100%;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    .wireless-img-wrapper, .wireless-image-2, .wireless-section-content{
+        width: 100%;
+    }
+
+    .wireless-image-1{
+        display: none;
+    }
+
+    .feature-content-wrapper-1, .feature-content-wrapper-2{
+        margin-top: 2em;
+    }
+
+    @media screen and (max-width: 520px){
+        nav div{
+            padding-bottom: 5px;
+            height: 30px;
+        }
+
+        .button{
+            padding: 5px 10px;
+        }
+
+        nav{
+            padding: 2em 0;
+        }
+
+        .nav,.container{
+            width: 80%;
+        }
+
+        h1{
+            font-size: 2em;
+        }
+
+        .wireless-image-2{
+            height: 15em;
+        }
+
+        #feature-section{
+            flex-direction: column;
+        }
+    }
+}
+
