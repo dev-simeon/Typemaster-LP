@@ -172,7 +172,7 @@ footer{
         margin-top: 2em;
         margin-bottom: 3em;
         flex-direction: column;
-        gap: 4em;
+        gap: 3em;
         text-align: center;
     }
 
@@ -238,6 +238,8 @@ footer{
         #feature-section{
             flex-direction: column;
         }
+
+        
     }
 }
 
